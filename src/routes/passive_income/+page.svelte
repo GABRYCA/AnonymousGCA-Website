@@ -10,6 +10,11 @@
     });
 </script>
 
+<svelte:head>
+    <title>Passive Income - AnonymousGCA</title>
+    <meta name="description" content="Passive Income ideas: There're many ways to get a passive income, my favourite one is to sell unused bandwidth.">
+</svelte:head>
+
 <div class="container mb-5">
     <div class="container text-center bg-primary bg-opacity-25 rounded-3 pb-3 pt-2 mt-5 border border-1 border-dark">
         <p class="h1 text-primary">Passive Income ideas:</p>

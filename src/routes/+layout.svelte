@@ -1,8 +1,9 @@
 <script>
     import {onMount} from "svelte";
+    import AOS from 'aos';
 
     onMount(() => {
-
+        // Close navbar when open another page, with animation
         document.querySelectorAll('.nav-link').forEach((element) => {
             element.addEventListener('click', () => {
                 document.querySelector('.navbar-collapse').classList.remove('show');
@@ -19,7 +20,16 @@
         AOS.init({
             once: true,
         });
+        window.AOS = AOS;
     });
+
+    export function handlePageChange() {
+        // Check if AOS is initialized
+        if (window.AOS) {
+            // Refresh AOS animations
+            window.AOS.refresh();
+        }
+    }
 </script>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">

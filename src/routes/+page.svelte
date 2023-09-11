@@ -10,181 +10,192 @@
     });
 </script>
 
-<div class="container-fluid">
+<svelte:head>
+    <!-- meta -->
+    <title>Home - AnonymousGCA</title>
+    <meta name="description" content="AnonymousGCA - Web Developer, College Student, PHP 8.2 Lover, Free-Time Designer-Artist">
+</svelte:head>
 
-    <!-- Content -->
-    <div class="container-fluid mb-5">
-        <!-- Image logo from img/logo.png -->
-        <div class="row justify-content-center align-items-center mb-4 mt-4">
-            <div class="col-12 col-md-6 text-center">
-                <img src="/favicon.webp" class="img-fluid p-5" style="max-height: 75vh" alt="AnonymousGCA Logo" data-aos="fade-down"
-                     data-aos-duration="1500">
-            </div>
+
+<!-- Content -->
+<div class="container-fluid mb-5">
+    <!-- Image logo from img/logo.png -->
+    <div class="row justify-content-center align-items-center mb-4 mt-4">
+        <div class="col-12 col-md-6 text-center">
+            <img src="/favicon.webp" class="img-fluid p-5" style="max-height: 75vh" alt="AnonymousGCA Logo"
+                 data-aos="fade-down"
+                 data-aos-duration="1500">
         </div>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-md-6 text-center">
-                <p class="h1" id="text-glitched-effect" data-aos="slide-up" data-aos-duration="1500">Hi! I'm
-                    <b class="animate-text">AnonymousGCA!</b></p>
-            </div>
+    </div>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-6 text-center">
+            <p class="h1" id="text-glitched-effect" data-aos="slide-up" data-aos-duration="1500">Hi! I'm
+                <b class="animate-text">AnonymousGCA!</b></p>
         </div>
-        <hr class="mt-5 mb-5">
-        <div class="row mb-3 mb-md-5">
-            <div class="col">
-                <p class="h1 text-center skill-titles">I am:</p>
+    </div>
+    <hr class="mt-5 mb-5">
+    <div class="row mb-3 mb-md-5">
+        <div class="col">
+            <p class="h1 text-center skill-titles">I am:</p>
+        </div>
+    </div>
+
+    <div class="row justify-content-around">
+        <div class="col-12 col-sm-5 rounded-3 bg-black bg-opacity-25 pb-5 pt-4 mb-4 element-skill" data-aos="zoom-in"
+             data-aos-duration="600">
+            <div class="row">
+                <div class="col">
+                    <p class="h2 text-center fw-bold second-text">A Web-Developer</p>
+                </div>
+            </div>
+            <hr class="mt-4 mb-5">
+            <div class="row">
+                <div class="col">
+                    <i class="fas fa-code fa-5x w-100 text-center"></i>
+                </div>
             </div>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-12 col-sm-5 rounded-3 bg-black bg-opacity-25 pb-5 pt-4 m-4 element-skill" data-aos="zoom-in"
-                 data-aos-duration="600">
+        <div class="col-12 col-sm-5 rounded-3 bg-black bg-opacity-25 pb-5 pt-4 mb-4 element-skill" data-aos="zoom-in"
+             data-aos-duration="600">
+            <div class="row">
+                <div class="col">
+                    <p class="h2 text-center fw-bold second-text">A College student</p>
+                </div>
+            </div>
+            <hr class="mt-4 mb-5">
+            <div class="row">
+                <div class="col">
+                    <i class="fas fa-graduation-cap fa-5x w-100 text-center"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-5 rounded-3 bg-black bg-opacity-25 pt-4 pb-5 mb-4 element-skill" data-aos="zoom-in"
+             data-aos-duration="600">
+            <div class="front">
                 <div class="row">
                     <div class="col">
-                        <p class="h2 text-center fw-bold second-text">A Web-Developer</p>
+                        <p class="h2 text-center fw-bold second-text">A PHP 8.2 Lover - 🫠!</p>
                     </div>
                 </div>
                 <hr class="mt-4 mb-5">
                 <div class="row">
                     <div class="col">
-                        <i class="fas fa-code fa-5x w-100 text-center"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-5 rounded-3 bg-black bg-opacity-25 pb-5 pt-4 m-4 element-skill" data-aos="zoom-in"
-                 data-aos-duration="600">
-                <div class="row">
-                    <div class="col">
-                        <p class="h2 text-center fw-bold second-text">A College student</p>
-                    </div>
-                </div>
-                <hr class="mt-4 mb-5">
-                <div class="row">
-                    <div class="col">
-                        <i class="fas fa-graduation-cap fa-5x w-100 text-center"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-5 rounded-3 bg-black bg-opacity-25 pt-4 pb-5 m-4 element-skill" data-aos="zoom-in"
-                 data-aos-duration="600">
-                <div class="front">
-                    <div class="row">
-                        <div class="col">
-                            <p class="h2 text-center fw-bold second-text">A PHP 8.2 Lover - 🫠!</p>
-                        </div>
-                    </div>
-                    <hr class="mt-4 mb-5">
-                    <div class="row">
-                        <div class="col">
-                            <i class="fas fa-server fa-5x w-100 text-center"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-5 rounded-3 bg-black bg-opacity-25 pt-4 pb-5 m-4 element-skill" data-aos="zoom-in"
-                 data-aos-duration="600">
-                <div class="row">
-                    <div class="col">
-                        <p class="h2 text-center fw-bold second-text">A Free-Time Designer-Artist</p>
-                    </div>
-                </div>
-                <hr class="mt-4 mb-5">
-                <div class="row">
-                    <div class="col">
-                        <i class="fas fa-palette fa-5x w-100 text-center"></i>
+                        <i class="fas fa-server fa-5x w-100 text-center"></i>
                     </div>
                 </div>
             </div>
         </div>
 
-        <hr class="mt-3 mt-md-5 mb-5">
-
-        <div class="row">
-            <div class="col-12 mb-4">
-                <p class="h1 text-center second-text">Contact me:</p>
+        <div class="col-12 col-sm-5 rounded-3 bg-black bg-opacity-25 pt-4 pb-5 mb-4 element-skill" data-aos="zoom-in"
+             data-aos-duration="600">
+            <div class="row">
+                <div class="col">
+                    <p class="h2 text-center fw-bold second-text">A Free-Time Designer-Artist</p>
+                </div>
             </div>
-            <div class="col-12">
-                <div class="row justify-content-center text-center mt-4" data-aos="zoom-in" data-aos-duration="600">
-                    <div class="col-3">
-                        <a href="https://discord.gg/RSp2CSuMny" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Open">
+            <hr class="mt-4 mb-5">
+            <div class="row">
+                <div class="col">
+                    <i class="fas fa-palette fa-5x w-100 text-center"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="mt-3 mt-md-5 mb-5">
+
+    <div class="row">
+        <div class="col-12 mb-4">
+            <p class="h1 text-center second-text">Contact me:</p>
+        </div>
+        <div class="col-12">
+            <div class="row justify-content-center text-center mt-4" data-aos="zoom-in" data-aos-duration="600">
+                <div class="col-3">
+                    <a href="https://discord.gg/RSp2CSuMny" target="_blank" data-bs-toggle="tooltip"
+                       data-bs-placement="top" title="Open Discord">
                         <span class="fa-stack fa-2x text-light text-opacity-25">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-discord fa-stack-1x fa-inverse hover-effect-icons"></i>
                         </span>
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="https://www.linkedin.com/in/gabriele-caretti-046408270/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Open">
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.linkedin.com/in/gabriele-caretti-046408270/" target="_blank"
+                       data-bs-toggle="tooltip" data-bs-placement="top" title="Open Linkedin">
                         <span class="fa-stack fa-2x text-light text-opacity-25">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-linkedin fa-stack-1x fa-inverse hover-effect-icons"></i>
                         </span>
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="mailto:anonymousgca@anonymousgca.eu" data-bs-toggle="tooltip" data-bs-placement="top" title="top">
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="mailto:anonymousgca@anonymousgca.eu" data-bs-toggle="tooltip" data-bs-placement="top"
+                       title="Send Email">
                         <span class="fa-stack fa-2x text-light text-opacity-25">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fas fa-envelope fa-stack-1x fa-inverse hover-effect-icons"></i>
                         </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <hr class="mt-5 mb-5">
-
-        <div class="row">
-            <div class="col-12 mb-4">
-                <p class="h1 text-center second-text">Socials and Development:</p>
-            </div>
-            <div class="col-12">
-                <div class="row justify-content-center text-center mt-4" data-aos="zoom-in" data-aos-duration="600">
-                    <div class="col-3 mb-5">
-                        <a href="https://github.com/GABRYCA" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Open">
-                        <span class="fa-stack fa-2x text-light text-opacity-25">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-github fa-stack-1x fa-inverse hover-effect-icons"></i>
-                        </span>
-                        </a>
-                    </div>
-                    <div class="col-3 mb-5">
-                        <a href="https://www.youtube.com/channel/UCJgmoEFd6b9oOj2OvafuezQ" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Open">
-                        <span class="fa-stack fa-2x text-light text-opacity-25">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-youtube fa-stack-1x fa-inverse hover-effect-icons"></i>
-                        </span>
-                        </a>
-                    </div>
-                    <div class="col-3 mb-5">
-                        <a href="https://ud.me/anonymousgca.crypto" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Open">
-                        <span class="fa-stack fa-2x text-light text-opacity-25">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-globe fa-stack-1x fa-inverse hover-effect-icons"></i>
-                        </span>
-                        </a>
-                    </div>
-                    <div class="col-3 mb-5">
-                        <a href="https://www.reddit.com/u/AnonymousGCA" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Open">
-                        <span class="fa-stack fa-2x text-light text-opacity-25">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-reddit fa-stack-1x fa-inverse hover-effect-icons"></i>
-                        </span>
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
 
     </div>
+
+    <hr class="mt-5 mb-5">
+
+    <div class="row">
+        <div class="col-12 mb-4">
+            <p class="h1 text-center second-text">Socials and Development:</p>
+        </div>
+        <div class="col-12">
+            <div class="row justify-content-center text-center mt-4" data-aos="zoom-in" data-aos-duration="600">
+                <div class="col-3 mb-5">
+                    <a href="https://github.com/GABRYCA" target="_blank" data-bs-toggle="tooltip"
+                       data-bs-placement="top" title="Open Github">
+                        <span class="fa-stack fa-2x text-light text-opacity-25">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-github fa-stack-1x fa-inverse hover-effect-icons"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-3 mb-5">
+                    <a href="https://www.youtube.com/channel/UCJgmoEFd6b9oOj2OvafuezQ" target="_blank"
+                       data-bs-toggle="tooltip" data-bs-placement="top" title="Open Youtube">
+                        <span class="fa-stack fa-2x text-light text-opacity-25">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-youtube fa-stack-1x fa-inverse hover-effect-icons"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-3 mb-5">
+                    <a href="https://ud.me/anonymousgca.crypto" target="_blank" data-bs-toggle="tooltip"
+                       data-bs-placement="top" title="Open UD - Crypto - Web3">
+                        <span class="fa-stack fa-2x text-light text-opacity-25">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-globe fa-stack-1x fa-inverse hover-effect-icons"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-3 mb-5">
+                    <a href="https://www.reddit.com/u/AnonymousGCA" target="_blank" data-bs-toggle="tooltip"
+                       data-bs-placement="top" title="Open Reddit">
+                        <span class="fa-stack fa-2x text-light text-opacity-25">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-reddit fa-stack-1x fa-inverse hover-effect-icons"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
-<div class="mt-1 mt-md-5 pt-1 pt-md-5">
-    <!--Waves Container-->
-    <div>
+<div class="row mt-1 mt-md-5 pt-1 pt-md-5">
+    <div class="col px-0">
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
              viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
@@ -198,7 +209,6 @@
             </g>
         </svg>
     </div>
-    <!--Waves end-->
 </div>
 
 <style>
