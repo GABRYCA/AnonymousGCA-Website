@@ -2,11 +2,7 @@
     import {onMount} from "svelte";
 
     onMount(() => {
-        // Init Bootstrap Tooltip
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl);
-        });
+        window.$('[data-bs-toggle="tooltip"]').tooltip();
     });
 </script>
 
@@ -60,7 +56,7 @@
              data-aos-duration="600">
             <div class="row">
                 <div class="col">
-                    <p class="h2 text-center fw-bold second-text">A College student</p>
+                    <p class="h2 text-center fw-bold second-text">A University student</p>
                 </div>
             </div>
             <hr class="mt-4 mb-5">
