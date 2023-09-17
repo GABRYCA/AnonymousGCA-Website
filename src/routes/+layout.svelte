@@ -20,15 +20,13 @@
     });
 
     export function handlePageChange() {
-        // Check if AOS is initialized
         if (window.AOS) {
-            // Refresh AOS animations
             window.AOS.refresh();
         }
     }
 </script>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-xxl">
         <a class="navbar-brand" href="/">
             <i class="fas fa-code"></i>

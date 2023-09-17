@@ -9,7 +9,7 @@
 <svelte:head>
     <!-- meta -->
     <title>Home - AnonymousGCA</title>
-    <meta name="description" content="AnonymousGCA - Web Developer, College Student, PHP 8.2 Lover, Free-Time Designer-Artist">
+    <meta name="description" content="AnonymousGCA - Web Developer, University Student, PHP 8.2 Lover, Free-Time Designer-Artist">
 </svelte:head>
 
 
@@ -56,7 +56,7 @@
              data-aos-duration="600">
             <div class="row">
                 <div class="col">
-                    <p class="h2 text-center fw-bold second-text">A University student</p>
+                    <p class="h2 text-center fw-bold second-text">An University student</p>
                 </div>
             </div>
             <hr class="mt-4 mb-5">
