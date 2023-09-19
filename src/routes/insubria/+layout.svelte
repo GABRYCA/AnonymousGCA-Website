@@ -17,11 +17,28 @@
         <a class="btn btn-outline-light" id="mercoledi" href="/insubria/mercoledi">Mercoledì</a>
     </div>
     <div class="col-auto">
-        <a class="btn btn-outline-light" id="giovedi" href="/insubria/giovedi">Giovedì</a>
+        <a class="btn btn-outline-light mt-2 mt-sm-0" id="giovedi" href="/insubria/giovedi">Giovedì</a>
     </div>
     <div class="col-auto">
-        <a class="btn btn-outline-light" id="venerdi" href="/insubria/venerdi">Venerdi</a>
+        <a class="btn btn-outline-light mt-2 mt-sm-0" id="venerdi" href="/insubria/venerdi">Venerdi</a>
     </div>
 </div>
 
 <slot></slot>
+
+<!-- Link agli orari degli autobus, sito trenitalia, e navigazione laghi -->
+<div class="row justify-content-center mt-4 mb-4">
+    <div class="col-auto">
+        <a href="https://www.uninsubria.it/sites/default/files/2023-09/Linea%20Insubria.pdf" target="_blank" class="btn btn-outline-light">Orari Autobus</a>
+    </div>
+    <!-- Autobus LINEA C alternative -->
+    <div class="col-auto">
+        <a href="https://www.ctpi.it/img/upload/OrariLinee/LineaC.pdf" target="_blank" class="btn btn-outline-light">Orari Linea C</a>
+    </div>
+    <div class="col-auto">
+        <a href="https://www.trenitalia.com/" target="_blank" class="btn btn-outline-light">Orari Treni</a>
+    </div>
+    <div class="col-auto mt-2 mt-sm-0">
+        <a href="https://www.navigazionelaghi.it/biglietti-e-orari-lago-maggiore/" target="_blank" class="btn btn-outline-light">Navigazione Laghi</a>
+    </div>
+</div>
