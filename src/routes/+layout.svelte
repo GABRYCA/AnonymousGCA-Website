@@ -1,6 +1,7 @@
 <script>
     import {onMount} from "svelte";
     import AOS from 'aos';
+    import favicon from "$lib/images/favicon.webp";
 
     onMount(() => {
         // Close navbar when open another page, with animation
@@ -25,6 +26,10 @@
         }
     }
 </script>
+
+<svelte:head>
+    <link rel="icon" href={favicon} type="image/webp">
+</svelte:head>
 
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-xxl">

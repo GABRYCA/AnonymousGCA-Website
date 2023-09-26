@@ -1,5 +1,6 @@
 <script>
     import {onMount} from "svelte";
+    import favicon from "$lib/images/favicon.webp";
 
     onMount(() => {
         window.$('[data-bs-toggle="tooltip"]').tooltip();
@@ -18,7 +19,7 @@
     <!-- Image logo from img/logo.png -->
     <div class="row justify-content-center align-items-center mb-4 mt-4">
         <div class="col-12 col-md-6 text-center">
-            <img src="/favicon.webp" class="img-fluid p-5" style="max-height: 75vh" alt="AnonymousGCA Logo"
+            <img src={favicon} class="img-fluid p-5" style="max-height: 75vh" alt="AnonymousGCA Logo"
                  data-aos="fade-down"
                  data-aos-duration="1500">
         </div>
@@ -56,7 +57,7 @@
              data-aos-duration="600">
             <div class="row">
                 <div class="col">
-                    <p class="h2 text-center fw-bold second-text">An University student</p>
+                    <p class="h2 text-center fw-bold second-text">A University student</p>
                 </div>
             </div>
             <hr class="mt-4 mb-5">
