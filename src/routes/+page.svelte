@@ -5,6 +5,7 @@
     onMount(() => {
         window.$('[data-bs-toggle="tooltip"]').tooltip();
     });
+
 </script>
 
 <svelte:head>

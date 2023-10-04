@@ -32,18 +32,18 @@
                     type: TRAGHETTO,
                     icona: 'ship',
                     colore: 'traghetto',
-                    nome: 'Corsa T.26',
-                    oraPartenza: '08:05',
-                    oraArrivo: '08:25',
+                    nome: 'Corsa T.18',
+                    oraPartenza: '06:30',
+                    oraArrivo: '06:50',
                     luogoPartenza: 'Intra',
                     luogoArrivo: 'Laveno'
                 },
                 {
                     type: TRENO,
                     icona: 'train',
-                    nome: 'Trenord 30',
-                    oraPartenza: '08:38',
-                    oraArrivo: '09:15',
+                    nome: 'Trenord 2024',
+                    oraPartenza: '07:08',
+                    oraArrivo: '07:45',
                     luogoPartenza: 'Laveno Mombello Lago',
                     luogoArrivo: 'Varese Nord'
                 },
@@ -51,8 +51,8 @@
                     type: AUTOBUS,
                     icona: 'bus',
                     nome: 'Linea C/RS',
-                    oraPartenza: '09:48',
-                    oraArrivo: '10:00',
+                    oraPartenza: '08:08',
+                    oraArrivo: '08:20',
                     luogoPartenza: 'Morosini (FS/FNM)',
                     luogoArrivo: 'Monte Generoso, 71 (ASL)'
                 }
