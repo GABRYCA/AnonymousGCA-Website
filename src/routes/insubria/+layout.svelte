@@ -36,6 +36,9 @@
         <a href="https://www.ctpi.it/img/upload/OrariLinee/LineaC.pdf" target="_blank" class="btn btn-outline-light">Linea C</a>
     </div>
     <div class="col-auto mt-2 mt-sm-0">
+        <a href="https://www.ctpi.it/img/upload/OrariLinee/LineaE.pdf" target="_blank" class="btn btn-outline-light">Linea E</a>
+    </div>
+    <div class="col-auto mt-2 mt-sm-0">
         <a href="https://www.trenitalia.com/" target="_blank" class="btn btn-outline-light">Orari Treni</a>
     </div>
     <div class="col-auto mt-2 mt-sm-0">
