@@ -31,7 +31,6 @@
     <div class="col-auto">
         <a href="https://www.uninsubria.it/sites/default/files/2023-09/Linea%20Insubria.pdf" target="_blank" class="btn btn-outline-light">Linea Insubria</a>
     </div>
-    <!-- Autobus LINEA C alternative -->
     <div class="col-auto">
         <a href="https://www.ctpi.it/img/upload/OrariLinee/LineaC.pdf" target="_blank" class="btn btn-outline-light">Linea C</a>
     </div>
@@ -45,3 +44,11 @@
         <a href="https://www.navigazionelaghi.it/biglietti-e-orari-lago-maggiore/" target="_blank" class="btn btn-outline-light">Navigazione Laghi</a>
     </div>
 </div>
+
+<style>
+    :global(:root) {
+        --color-train: #29ff10;
+        --color-ship: #4868ff;
+        --color-bus: #ff7e00;
+    }
+</style>

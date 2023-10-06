@@ -307,3 +307,18 @@
         </table>
     </div>
 </div>
+
+
+<style>
+    .fa-bus {
+        color: var(--color-bus) !important;
+    }
+
+    .fa-train {
+        color: var(--color-train) !important;
+    }
+
+    .fa-ship {
+        color: var(--color-ship) !important;
+    }
+</style>
