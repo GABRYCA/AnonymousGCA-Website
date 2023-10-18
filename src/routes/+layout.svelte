@@ -31,7 +31,7 @@
     <link rel="icon" href={favicon} type="image/webp">
 </svelte:head>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark mt-1">
     <div class="container-xxl">
         <a class="navbar-brand" href="/">
             <i class="fas fa-code"></i>
@@ -62,7 +62,7 @@
 
 <slot></slot>
 
-<footer class="bg-dark text-light border-top border-light pt-4">
+<footer class="bg-dark text-light border-top border-light pt-4 mb-2">
     <div class="container pt-2">
         <div class="row justify-content-evenly text-center text-md-start">
             <div class="col-lg-6 col-md-12 mb-md-0">
