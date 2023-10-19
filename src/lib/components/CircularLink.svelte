@@ -13,10 +13,10 @@
 <div class="col-3">
     <a href={href} target="_blank" data-bs-toggle="tooltip"
        data-bs-placement="top" title="{title}">
-                        <span class="fa-stack fa-2x light-span">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="{icon} fa-stack-1x fa-inverse hover-effect-icons"></i>
-                        </span>
+        <span class="fa-stack fa-2x light-span">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="{icon} fa-stack-1x fa-inverse hover-effect-icons"></i>
+        </span>
     </a>
 </div>
 
