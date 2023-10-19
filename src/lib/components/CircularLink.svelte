@@ -35,6 +35,6 @@
     }
 
     .hover-effect-icons:hover {
-        color: #5865F2 !important;
+        color: #ff2b2b !important;
     }
 </style>

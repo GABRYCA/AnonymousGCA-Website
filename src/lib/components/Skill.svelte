@@ -3,7 +3,7 @@
     export let icon = "fas fa-code";
 </script>
 
-<div class="col-12 col-sm-11 col-lg-5 rounded-3 bg-black bg-opacity-10 border border-danger border-opacity-25 pb-5 pt-4 mb-4 element-skill" data-aos="zoom-in"
+<div class="col-12 col-sm-11 col-lg-5 rounded-5 bg-black bg-opacity-10 border border-danger border-opacity-25 pb-5 pt-4 mb-4 element-skill" data-aos="zoom-in"
      data-aos-duration="600">
     <div class="row">
         <div class="col">
