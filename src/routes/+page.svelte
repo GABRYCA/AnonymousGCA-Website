@@ -4,7 +4,6 @@
     import CircularLink from "$lib/components/CircularLink.svelte";
     import SVGWave from "$lib/components/SVGWave.svelte";
     import favicon from "$lib/images/favicon.webp";
-    import AnimatedWave from "$lib/components/AnimatedWave.svelte";
 
     onMount(() => {
         window.$('[data-bs-toggle="tooltip"]').tooltip();

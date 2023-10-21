@@ -1,6 +1,5 @@
 <script>
     import {onMount} from "svelte";
-    import AnimatedWave from "$lib/components/AnimatedWave.svelte";
 
     onMount(() => {
         window.$('[data-bs-toggle="tooltip"]').tooltip();

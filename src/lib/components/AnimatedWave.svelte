@@ -1,3 +1,7 @@
+<script>
+    export let rgb = "59, 0, 135";
+</script>
+
 <div class="row mt-5 mb-5 pt-1 pt-5">
     <div class="col px-0">
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -6,10 +10,10 @@
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
             </defs>
             <g class="parallax">
-                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(59, 0, 135,0.7)"/>
-                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(59, 0, 135,0.5)"/>
-                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(59, 0, 135,0.3)"/>
-                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(59, 0, 135,1.0)"/>
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba({rgb},0.7)"/>
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba({rgb},0.5)"/>
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba({rgb},0.3)"/>
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba({rgb},1.0)"/>
             </g>
         </svg>
         <svg style="transform: rotate(180deg); height: 150px" class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -18,10 +22,10 @@
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
             </defs>
             <g class="parallax">
-                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(59, 0, 135,0.7)"/>
-                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(59, 0, 135,0.5)"/>
-                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(59, 0, 135,0.3)"/>
-                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(59, 0, 135,1.0)"/>
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba({rgb},0.7)"/>
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba({rgb},0.5)"/>
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba({rgb},0.3)"/>
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba({rgb},1.0)"/>
             </g>
         </svg>
     </div>
