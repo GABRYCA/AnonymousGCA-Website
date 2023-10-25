@@ -33,7 +33,7 @@
     <link rel="icon" href={favicon} type="image/webp">
 </svelte:head>
 
-<nav class="navbar navbar-expand-lg navbar-dark mt-1">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black bg-opacity-50" style="backdrop-filter: blur(8px);">
     <div class="container-xxl">
         <a class="navbar-brand" href="/">
             <i class="fas fa-code"></i>

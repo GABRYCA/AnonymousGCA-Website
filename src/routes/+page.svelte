@@ -20,7 +20,7 @@
 
 
 <!-- Image logo from img/logo.png -->
-<div class="row justify-content-center align-items-center pb-5 pb-md-0 mt-1 bg-black bg-opacity-10">
+<div class="row justify-content-center align-items-center pb-5 pt-5 pb-md-0 bg-black bg-opacity-10">
     <div class="col-12 col-lg-6 text-center pe-lg-0">
         <img src={favicon} class="img-fluid p-5" style="max-height: 75vh" alt="AnonymousGCA Logo"
              data-aos="fade-down"
