@@ -3,7 +3,7 @@
 
     export let icon = 'fas fa-code';
     export let title = 'Code';
-    export let href = '#';
+    export let link = '#';
 
     onMount(() => {
         window.$('[data-bs-toggle="tooltip"]').tooltip();
@@ -11,7 +11,7 @@
 </script>
 
 <div class="col-3">
-    <a href={href} target="_blank" data-bs-toggle="tooltip"
+    <a href="{link}" target="_blank" data-bs-toggle="tooltip"
        data-bs-placement="top" title="{title}">
         <span class="fa-stack fa-2x light-span">
             <i class="fas fa-circle fa-stack-2x"></i>
