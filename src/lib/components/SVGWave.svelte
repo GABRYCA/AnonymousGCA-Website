@@ -1,5 +1,5 @@
 <script>
-    export let data = "000 000";
+    export let data = "000 000"; // Shape of the wave
     export let rotation = 0;
 
     $: rotation = parseInt(rotation);
