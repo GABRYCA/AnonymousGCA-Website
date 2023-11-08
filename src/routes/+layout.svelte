@@ -33,7 +33,7 @@
     <link rel="icon" href={favicon} type="image/webp">
 </svelte:head>
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black bg-opacity-50" style="backdrop-filter: blur(8px);">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black px-2 px-md-0 bg-opacity-50" style="backdrop-filter: blur(8px);">
     <div class="container-xxl">
         <a class="navbar-brand" href="/">
             <i class="fas fa-code"></i>
@@ -62,6 +62,14 @@
     </div>
 </nav>
 
+<nav class="navbar bg-black bg-opacity-10" style="color: transparent !important;">
+    <div class="container-xxl">
+        <a class="navbar-brand" href="/">
+            <span class="ms-2"></span>
+        </a>
+    </div>
+</nav>
+
 <slot></slot>
 
 <AnimatedWave />
@@ -79,6 +87,9 @@
             <div class="col-lg-3 col-md-6 mb-md-0">
                 <h5 class="text-uppercase">Links</h5>
                 <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="https://github.com/GABRYCA" target="_blank" class="text-light" data-bs-toggle="tooltip" data-bs-placement="right" title="Open">Github</a>
+                    </li>
                     <li>
                         <a href="https://discord.gg/RSp2CSuMny" target="_blank" class="text-light" data-bs-toggle="tooltip" data-bs-placement="right" title="Open">Discord</a>
                     </li>
