@@ -17,11 +17,11 @@
 <div class="container-xxl">
     <div class="row justify-content-center mt-4">
         <div class="col text-center">
-            <p class="h1 title mt-4 mb-4">The small collection:</p>
+            <p class="h1 title mt-4 mb-4" data-aos="fade-up">The small collection:</p>
         </div>
     </div>
 
-    <div class="row mt-4">
+    <div class="row mt-4" data-aos="fade-up">
 
         <!-- Raspberry Pi Zero 2W Info-->
         <div class="col-12 col-md-7 bg-black bg-opacity-50 p-4 pb-2 rounded-5 raspberry">
