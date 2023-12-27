@@ -14,10 +14,10 @@
     <meta name="description" content="AnonymousGCA's contacts">
 </svelte:head>
 
-<div class="container">
+<div class="container-xxl">
     <div class="row justify-content-center mt-4">
         <div class="col text-center">
-            <p class="h1 title">The small collection:</p>
+            <p class="h1 title mt-4 mb-4">The small collection:</p>
         </div>
     </div>
 
