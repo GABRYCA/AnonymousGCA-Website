@@ -1,7 +1,7 @@
 <script>
-    import ozerofront from"$lib/images/o-zero2w-front.png";
-    import ozeroangle from "$lib/images/o-zero2w-angled.png";
-    import orangelogo from "$lib/images/orange-logo.png";
+    import ozerofront from"$lib/images/o-zero2w-front-optimized.webp";
+    import ozeroangle from "$lib/images/o-zero2w-angled-optimized.webp";
+    import orangelogo from "$lib/images/orange-logo-optimized.webp";
     import {onMount} from "svelte";
 
     onMount(() => {
