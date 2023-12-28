@@ -114,6 +114,8 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: textclip 5s linear infinite;
+        transform: translateZ(0);
+        will-change: transform, background-position;
         display: inline-block;
     }
 
@@ -135,6 +137,7 @@
         -webkit-text-fill-color: transparent;
         animation: aitf 80s linear infinite;
         transform: translate3d(0, 0, 0);
+        will-change: transform, background-position;
         backface-visibility: hidden;
     }
 
@@ -191,9 +194,10 @@
     }
 
     .second-text {
-        transform: translateZ(0);
         margin: auto;
         font-weight: 300;
         animation: lights 5s 750ms linear infinite;
+        transform: translateZ(0);
+        will-change: transform, color, text-shadow;
     }
 </style>

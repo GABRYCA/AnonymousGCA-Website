@@ -151,5 +151,7 @@
 
     .neon {
         animation: neon 1.5s ease-in-out infinite alternate;
+        transform: translateZ(0);
+        will-change: transform, text-shadow;
     }
 </style>

@@ -151,6 +151,8 @@
         font-size: 2.5em;
         text-shadow: 0 0 5px #29ff10, 0 0 25px #29ff10, 0 0 50px #29ff10, 0 0 200px #29ff10;
         animation: glowing 2s infinite;
+        transform: translateZ(0);
+        will-change: transform, text-shadow;
     }
 
     @keyframes glowing {
@@ -177,6 +179,8 @@
         z-index: -1;
         background-size: 300% 300%;
         animation: wave 25s linear infinite;
+        transform: translateZ(0);
+        will-change: transform, background-position;
     }
 
     /* Orange Pi */
@@ -197,6 +201,8 @@
         z-index: -1;
         background-size: 300% 300%;
         animation: wave 25s linear infinite;
+        transform: translateZ(0);
+        will-change: transform, background-position;
     }
 
     /* Keyframes for the wave animation */
