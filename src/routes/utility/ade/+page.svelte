@@ -5,6 +5,8 @@
     let result = '';
     let bitInput = 0;
     let byteResult = '';
+    let exponentInput = 0;
+    let powerResult = '';
 
     onMount(() => {
         window.$('[data-bs-toggle="tooltip"]').tooltip();
@@ -71,6 +73,14 @@
         let parolaBit = power === 1 ? 'Bit' : 'Bits';
         byteResult = `<p class='mt-2 mb-0 fs-3 text-info'>${bytes} Byte - 2<sup class='text-warning'>${power}</sup> (${parola} ${power} ${parolaBit})</p>`;
     }
+
+    function handlePowerSubmit() {
+        if (exponentInput < 0) {
+            powerResult = '<p class="text-danger mb-0">Inserire un valore maggiore o uguale a 0</p>';
+            return;
+        }
+        powerResult = Math.pow(2, exponentInput);
+    }
 </script>
 
 <svelte:head>
@@ -89,7 +99,7 @@
             <form on:submit|preventDefault={handleSubmit}>
                 <div class="row mb-3">
                     <div class="col-md-10 col-sm-12">
-                        <label for="numberInput" class="form-label">Numero (potenza di 2, esempio 2, 4, 8, 16 etc...)</label>
+                        <label for="numberInput" class="form-label">Inserire potenza di 2, come 2, 4, 8... ossia <strong class="text-warning">x</strong> per il calcolo <span class="text-info">log</span><sub class="text-info">2</sub><strong class="text-warning">x</strong></label>
                         <input bind:value={numberInput} type="number" class="form-control shadow" id="numberInput" min="0" max="1024" step="2">
                     </div>
                     <div class="col-md-2 col-sm-12">
@@ -102,7 +112,7 @@
                         </select>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-success w-100"><i class="fas fa-check"></i> Calcola</button>
+                <button type="submit" class="btn btn-outline-primary bg-black bg-opacity-25 w-100"><i class="fas fa-check"></i> Calcola</button>
             </form>
             {#if result !== ''}
                 <div class="alert alert-info mt-3 mb-0" role="alert">
@@ -123,16 +133,46 @@
             <form on:submit|preventDefault={handleBitSubmit}>
                 <div class="row mb-3">
                     <div class="col-12">
-                        <label for="bitInput" class="form-label">Numero di bit (multiplo di 8, ma solitamente Bit->(Byte % 2 = 0) ossia pari, quindi 16, 32, 64 etc...)</label>
+                        <label for="bitInput" class="form-label">Numero di Bit (multiplo di 8, solitamente 16, 32, 64 etc...)</label>
                         <input bind:value={bitInput} type="number" class="form-control shadow" id="bitInput" min="0" step="8">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-success w-100"><i class="fas fa-check"></i> Converti</button>
+                <button type="submit" class="btn btn-outline-primary bg-black bg-opacity-25 w-100"><i class="fas fa-check"></i> Converti</button>
             </form>
             {#if byteResult !== ''}
                 <div class="alert alert-info mt-3 mb-0" role="alert">
                     <h5 class="alert-heading"><i class="fas fa-info-circle"></i> Risultato:</h5>
                     {@html byteResult}
+                </div>
+            {/if}
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="card shadow">
+        <div class="card-header bg-danger-subtle text-white">
+            <h5 class="mb-0"><i class="fas fa-calculator"></i> Calcolatore Potenza di 2</h5>
+        </div>
+        <div class="card-body">
+            <form on:submit|preventDefault={handlePowerSubmit}>
+                <div class="row justify-content-start">
+                    <div class="col-12 mb-2">
+                        <label for="exponentInput" class="form-label">Inserire esponente di <strong class="text-info">2</strong>, ossia <strong class="text-warning">x</strong> di <strong class="text-info">2</strong><sup class="text-warning"><strong>x</strong></sup></label>
+                    </div>
+                    <div class="col-auto mt-3 pe-1">
+                        <p class="fs-3">2</p>
+                    </div>
+                    <div class="col-auto ps-0">
+                        <input bind:value={exponentInput} type="number" class="form-control shadow" id="exponentInput" min="0" max="99">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-primary bg-black bg-opacity-25 w-100"><i class="fas fa-check"></i> Calcola</button>
+            </form>
+            {#if powerResult !== ''}
+                <div class="alert alert-info mt-3 mb-0" role="alert">
+                    <h5 class="alert-heading"><i class="fas fa-info-circle"></i> Risultato:</h5>
+                    <p>{powerResult}</p>
                 </div>
             {/if}
         </div>
