@@ -120,7 +120,7 @@
 <style>
 
     /* Global font for all kind of texts on all pages (must be in row to work, just a workaround) */
-    :global(.row){
+    :global(.row, slot, nav, footer, .container, .container-fluid){
         font-family: 'Roboto', sans-serif !important;
     }
 
