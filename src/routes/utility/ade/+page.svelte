@@ -47,7 +47,9 @@
         }
 
         let totalPower = power + unitPowers[unitSelect];
-        result = `<p class='mt-2 mb-0 fs-3 text-info'>2<sup class='text-warning'>${totalPower}</sup></p>`;
+        let parola = totalPower === 1 ? 'Serve' : 'Servono';
+        let parolaBit = totalPower === 1 ? 'Bit' : 'Bits';
+        result = `<p class='mt-2 mb-0 fs-3 text-info'>2<sup class='text-warning'>${totalPower}</sup> (${parola} ${totalPower} ${parolaBit})</p>`;
     }
 
     function handleBitSubmit() {
@@ -66,7 +68,8 @@
         }
 
         let parola = power === 1 ? 'Basta' : 'Bastano';
-        byteResult = `<p class='mt-2 mb-0 fs-3 text-info'>${bytes} Byte - 2<sup class='text-warning'>${power}</sup> (${parola} ${power} Bit)</p>`;
+        let parolaBit = power === 1 ? 'Bit' : 'Bits';
+        byteResult = `<p class='mt-2 mb-0 fs-3 text-info'>${bytes} Byte - 2<sup class='text-warning'>${power}</sup> (${parola} ${power} ${parolaBit})</p>`;
     }
 </script>
 
