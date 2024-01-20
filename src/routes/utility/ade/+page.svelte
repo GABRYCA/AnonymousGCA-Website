@@ -5,8 +5,23 @@
     let result = '';
     let bitInput = 0;
     let byteResult = '';
+    let byteResultOffset = '';
+    let resultCache = '';
+    let resultMemory = '';
     let exponentInput = 0;
     let powerResult = '';
+    let memoryInput = 0;
+    let memoryScale = 'Byte';
+    let wordInput = 0;
+    let cacheInput = 0;
+    let cacheScale = 'Byte';
+
+    const unitPowers = {
+        'Byte': 0,
+        'KB': 10,
+        'MB': 20,
+        'GB': 30
+    };
 
     onMount(() => {
         window.$('[data-bs-toggle="tooltip"]').tooltip();
@@ -34,13 +49,6 @@
     }
 
     function handleSubmit() {
-        const unitPowers = {
-            'Byte': 0,
-            'KB': 10,
-            'MB': 20,
-            'GB': 30
-        };
-
         let power = numberInput !== 0 ? calculatePowerOfTwo(numberInput) : 0;
 
         if (isNaN(power)) {
@@ -80,6 +88,62 @@
             return;
         }
         powerResult = Math.pow(2, exponentInput);
+    }
+
+
+
+    function handleMemorySubmit() {
+        let power = memoryInput !== 0 ? calculatePowerOfTwo(memoryInput) : 0;
+
+        if (isNaN(power)) {
+            resultMemory = power;
+            return;
+        }
+
+        let totalPower = power + unitPowers[memoryScale];
+        let parola = totalPower === 1 ? 'Serve' : 'Servono';
+        let parolaBit = totalPower === 1 ? 'Bit' : 'Bits';
+        resultMemory = `<p class='mt-2 mb-0 fs-3 text-info'>2<sup class='text-warning'>${totalPower}</sup> (${parola} ${totalPower} ${parolaBit})</p>`;
+    }
+
+    function handleBlockSubmit() {
+        let bytes = convertBitsToBytes(bitInput);
+        if (isNaN(bytes)) {
+            byteResultOffset = bytes;
+            return;
+        }
+
+        let powerBytes = 0;
+        while (Math.pow(2, powerBytes) < bytes) {
+            powerBytes++;
+        }
+        if (bytes === 1){
+            powerBytes++;
+        }
+
+        let powerWords = 0;
+        while (Math.pow(2, powerWords) < wordInput) {
+            powerWords++;
+        }
+
+        let totalPower = powerBytes + powerWords;
+        let parola = totalPower === 1 ? 'Basta' : 'Bastano';
+        let parolaBit = totalPower === 1 ? 'Bit' : 'Bits';
+        byteResultOffset = `<p class='mt-2 mb-0 fs-3 text-info'>2<sup class='text-warning'>${totalPower}</sup> (${parola} ${totalPower} ${parolaBit})</p>`;
+    }
+
+    function handleCacheSubmit() {
+        let power = cacheInput !== 0 ? calculatePowerOfTwo(cacheInput) : 0;
+
+        if (isNaN(power)) {
+            resultCache = power;
+            return;
+        }
+
+        let totalPower = power + unitPowers[cacheScale];
+        let parola = totalPower === 1 ? 'Serve' : 'Servono';
+        let parolaBit = totalPower === 1 ? 'Bit' : 'Bits';
+        resultCache = `<p class='mt-2 mb-0 fs-3 text-info'>2<sup class='text-warning'>${totalPower}</sup> (${parola} ${totalPower} ${parolaBit})</p>`;
     }
 </script>
 
@@ -173,6 +237,114 @@
                 <div class="alert alert-info mt-3 mb-0" role="alert">
                     <h5 class="alert-heading"><i class="fas fa-info-circle"></i> Risultato:</h5>
                     <p>{powerResult}</p>
+                </div>
+            {/if}
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <hr class="text-light">
+    <p class="h1 text-center">Calcolatori Indirizzamenti di memoria</p>
+    <hr class="text-light">
+
+
+    <div class="card shadow">
+        <div class="card-header bg-danger-subtle text-white">
+            <h5 class="mb-0"><i class="fas fa-calculator"></i> Calcolatore dimensione memoria totale:</h5>
+        </div>
+        <div class="card-body">
+            <form on:submit|preventDefault={handleMemorySubmit}>
+                <div class="row mb-3">
+                    <div class="col-md-10 col-sm-12">
+                        <label for="memoryInput" class="form-label">Inserire la quantità di memoria</label>
+                        <input bind:value={memoryInput} type="number" class="form-control shadow" id="memoryInput" min="0" max="1024" step="2">
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <label for="memoryScale" class="form-label mt-2 mt-md-0">Scala</label>
+                        <select bind:value={memoryScale} class="form-select shadow" id="memoryScale">
+                            <option>Byte</option>
+                            <option>KB</option>
+                            <option>MB</option>
+                            <option>GB</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-primary bg-black bg-opacity-25 w-100"><i class="fas fa-check"></i> Calcola</button>
+            </form>
+            {#if resultMemory !== ''}
+                <div class="alert alert-info mt-3 mb-0" role="alert">
+                    <h5 class="alert-heading"><i class="fas fa-info-circle"></i> Risultato:</h5>
+                    {@html resultMemory}
+                </div>
+            {/if}
+        </div>
+    </div>
+
+
+
+
+    <hr class="text-light">
+
+    <div class="card shadow">
+        <div class="card-header bg-danger-subtle text-white">
+            <h5 class="mb-0"><i class="fas fa-calculator"></i> Calcolatore dimensione blocco/<span class="text-info">offset</span>:</h5>
+        </div>
+        <div class="card-body">
+            <form on:submit|preventDefault={handleBlockSubmit}>
+                <div class="row mb-3">
+                    <div class="col-md-6 col-sm-12">
+                        <label for="wordInput" class="form-label">Inserire il numero di parole</label>
+                        <input bind:value={wordInput} type="number" class="form-control shadow" id="wordInput" min="0" max="1024" step="2">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <label for="bitInput" class="form-label mt-2 mt-md-0">Inserire il numero di bit per parola</label>
+                        <input bind:value={bitInput} type="number" class="form-control shadow" id="bitInput" min="0" max="1024" step="2">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-primary bg-black bg-opacity-25 w-100"><i class="fas fa-check"></i> Calcola</button>
+            </form>
+            {#if byteResultOffset !== ''}
+                <div class="alert alert-info mt-3 mb-0" role="alert">
+                    <h5 class="alert-heading"><i class="fas fa-info-circle"></i> Risultato:</h5>
+                    {@html byteResultOffset}
+                </div>
+            {/if}
+        </div>
+    </div>
+
+
+
+
+    <hr class="text-light">
+
+    <div class="card shadow">
+        <div class="card-header bg-danger-subtle text-white">
+            <h5 class="mb-0"><i class="fas fa-calculator"></i> Calcolatore dimensione memoria cache:</h5>
+        </div>
+        <div class="card-body">
+            <form on:submit|preventDefault={handleCacheSubmit}>
+                <div class="row mb-3">
+                    <div class="col-md-10 col-sm-12">
+                        <label for="cacheInput" class="form-label">Inserire la dimensione della cache</label>
+                        <input bind:value={cacheInput} type="number" class="form-control shadow" id="cacheInput" min="0" max="1024" step="2">
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <label for="cacheScale" class="form-label mt-2 mt-md-0">Scala</label>
+                        <select bind:value={cacheScale} class="form-select shadow" id="cacheScale">
+                            <option>Byte</option>
+                            <option>KB</option>
+                            <option>MB</option>
+                            <option>GB</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-primary bg-black bg-opacity-25 w-100"><i class="fas fa-check"></i> Calcola</button>
+            </form>
+            {#if resultCache !== ''}
+                <div class="alert alert-info mt-3 mb-0" role="alert">
+                    <h5 class="alert-heading"><i class="fas fa-info-circle"></i> Risultato:</h5>
+                    {@html resultCache}
                 </div>
             {/if}
         </div>
