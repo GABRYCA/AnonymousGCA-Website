@@ -15,6 +15,10 @@
     let wordInput = 0;
     let cacheInput = 0;
     let cacheScale = 'Byte';
+    let binaryInput = '';
+    let decimalInput = '';
+    let binaryResult = '';
+    let decimalResult = '';
 
     const unitPowers = {
         'Byte': 0,
@@ -46,6 +50,14 @@
             return '<p class="text-danger mb-0">Inserire un multiplo di 8</p>';
         }
         return bits / 8;
+    }
+
+    function binaryToDecimal() {
+        binaryResult = parseInt(binaryInput, 2).toString(10);
+    }
+
+    function decimalToBinary() {
+        decimalResult = parseInt(decimalInput, 10).toString(2);
     }
 
     function handleSubmit() {
@@ -349,4 +361,62 @@
             {/if}
         </div>
     </div>
+</div>
+
+<div class="container mt-5">
+
+    <hr class="text-light">
+
+    <div class="row">
+        <div class="col">
+            <p class="h2 text-center mt-1">Calcolatori binari</p>
+        </div>
+    </div>
+
+    <hr class="text-light">
+
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <div class="card shadow">
+                <div class="card-header bg-danger-subtle">
+                    <h5 class="mb-0"><i class="fas fa-calculator"></i> Convertitore Binario Decimale</h5>
+                </div>
+                <div class="card-body">
+                    <form on:submit|preventDefault={binaryToDecimal}>
+                        <div class="input-group mb-3">
+                            <input bind:value={binaryInput} type="text" class="form-control" placeholder="Inserire numero binario">
+                            <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                    {#if binaryResult !== ''}
+                        <div class="alert alert-success" role="alert">
+                            Decimale: {binaryResult}
+                        </div>
+                    {/if}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+            <div class="card">
+                <div class="card-header bg-danger-subtle">
+                    <h5 class="mb-0"><i class="fas fa-calculator"></i> Convertitore Decimale Binario</h5>
+                </div>
+                <div class="card-body">
+                    <form on:submit|preventDefault={decimalToBinary}>
+                        <div class="input-group mb-3">
+                            <input bind:value={decimalInput} type="text" class="form-control" placeholder="Inserire numero decimale">
+                            <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                    {#if decimalResult !== ''}
+                        <div class="alert alert-success" role="alert">
+                            Binario: {decimalResult}
+                        </div>
+                    {/if}
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
