@@ -32,18 +32,18 @@
                     type: TRAGHETTO,
                     icona: 'ship',
                     colore: 'traghetto',
-                    nome: 'Corsa T.18',
-                    oraPartenza: '06:30',
-                    oraArrivo: '06:50',
+                    nome: 'Corsa T.20',
+                    oraPartenza: '07:00',
+                    oraArrivo: '07:20',
                     luogoPartenza: 'Intra',
                     luogoArrivo: 'Laveno'
                 },
                 {
                     type: TRENO,
                     icona: 'train',
-                    nome: 'Trenord 2024',
-                    oraPartenza: '07:08',
-                    oraArrivo: '07:45',
+                    nome: 'Trenord 26',
+                    oraPartenza: '07:38',
+                    oraArrivo: '08:15',
                     luogoPartenza: 'Laveno Mombello Lago',
                     luogoArrivo: 'Varese Nord'
                 },
@@ -51,8 +51,8 @@
                     type: AUTOBUS,
                     icona: 'bus',
                     nome: 'Linea C/RS',
-                    oraPartenza: '08:08',
-                    oraArrivo: '08:20',
+                    oraPartenza: '08:28',
+                    oraArrivo: '08:40',
                     luogoPartenza: 'Morosini (FS/FNM)',
                     luogoArrivo: 'Monte Generoso, 71 (ASL)'
                 }
@@ -221,7 +221,7 @@
         </div>
 
         <!-- Tabella normale ritorno -->
-        <table class="table table-hover table-striped shadow mt-3">
+        <!--<table class="table table-hover table-striped shadow mt-3">
             <thead>
             <tr>
                 <th scope="col">Mezzo</th>
@@ -242,7 +242,10 @@
                 </tr>
             {/each}
             </tbody>
-        </table>
+        </table>-->
+
+        <p class="h3 text-danger-emphasis bg-light-subtle bg-opacity-25 pt-1 pb-2 rounded-4 mt-4">Sul momento, <span class="text-primary-emphasis">ormai abbiamo imparato!</span></p>
+
 
         <hr class="mt-5 mb-5">
 

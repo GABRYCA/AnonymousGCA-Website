@@ -32,18 +32,18 @@
                     type: TRAGHETTO,
                     icona: 'ship',
                     colore: 'traghetto',
-                    nome: 'Corsa T.50',
-                    oraPartenza: '12:05',
-                    oraArrivo: '12:25',
+                    nome: 'Corsa T.18',
+                    oraPartenza: '06:30',
+                    oraArrivo: '06:50',
                     luogoPartenza: 'Intra',
                     luogoArrivo: 'Laveno'
                 },
                 {
                     type: TRENO,
                     icona: 'train',
-                    nome: 'Trenord 46',
-                    oraPartenza: '12:38',
-                    oraArrivo: '13:15',
+                    nome: 'Trenord 2024',
+                    oraPartenza: '07:08',
+                    oraArrivo: '07:45',
                     luogoPartenza: 'Laveno Mombello Lago',
                     luogoArrivo: 'Varese Nord'
                 },
@@ -51,8 +51,8 @@
                     type: AUTOBUS,
                     icona: 'bus',
                     nome: 'Linea C/RS',
-                    oraPartenza: '13:28',
-                    oraArrivo: '13:40',
+                    oraPartenza: '08:08',
+                    oraArrivo: '08:20',
                     luogoPartenza: 'Morosini (FS/FNM)',
                     luogoArrivo: 'Monte Generoso, 71 (ASL)'
                 }
@@ -221,7 +221,7 @@
         </div>
 
         <!-- Tabella normale ritorno -->
-        <table class="table table-hover table-striped shadow mt-3">
+        <!--<table class="table table-hover table-striped shadow mt-3">
             <thead>
             <tr>
                 <th scope="col">Mezzo</th>
@@ -242,13 +242,14 @@
                 </tr>
             {/each}
             </tbody>
-        </table>
+        </table>-->
+        <p class="h3 text-danger-emphasis bg-light-subtle bg-opacity-25 pt-1 pb-2 rounded-4 mt-4">Sul momento, <span class="text-primary-emphasis">ormai abbiamo imparato!</span></p>
 
         <hr class="mt-5 mb-5">
 
         <div class="row justify-content-center">
             <div class="col-auto">
-                <h2 class="shadow px-5 pt-1 pb-1 rounded bg-primary bg-opacity-10">Anticipatario Andata:</h2>
+                <h2 class="shadow px-5 pt-1 pb-1 rounded bg-primary bg-opacity-10">Anticipatario Andata <span class="text-danger-emphasis fw-bold">(NO)</span>:</h2>
             </div>
         </div>
 
@@ -278,7 +279,7 @@
 
         <div class="row justify-content-center mt-4">
             <div class="col-auto">
-                <h2 class="shadow px-5 pt-1 pb-1 rounded bg-primary bg-opacity-10">Anticipatario Ritorno:</h2>
+                <h2 class="shadow px-5 pt-1 pb-1 rounded bg-primary bg-opacity-10">Anticipatario Ritorno <span class="text-danger-emphasis fw-bold">(NO)</span>:</h2>
             </div>
         </div>
 

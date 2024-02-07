@@ -191,7 +191,7 @@
             </div>
         </div>
 
-        <table class="table table-hover table-striped shadow mt-3">
+        <!--<table class="table table-hover table-striped shadow mt-3">
             <thead>
             <tr>
                 <th scope="col">Mezzo</th>
@@ -212,7 +212,9 @@
                 </tr>
             {/each}
             </tbody>
-        </table>
+        </table>-->
+
+        <p class="h3 text-danger-emphasis bg-light-subtle bg-opacity-25 pt-1 pb-2 rounded-4 mt-3">Nessuna lezione? <span class="text-primary-emphasis">Per ora...</span></p>
 
         <div class="row justify-content-center mt-4">
             <div class="col-auto">
@@ -221,7 +223,7 @@
         </div>
 
         <!-- Tabella normale ritorno -->
-        <table class="table table-hover table-striped shadow mt-3">
+        <!--<table class="table table-hover table-striped shadow mt-3">
             <thead>
             <tr>
                 <th scope="col">Mezzo</th>
@@ -242,7 +244,8 @@
                 </tr>
             {/each}
             </tbody>
-        </table>
+        </table>-->
+        <p class="h3 text-danger-emphasis bg-light-subtle bg-opacity-25 pt-1 pb-2 rounded-4 mt-4">Sul momento, <span class="text-primary-emphasis">ormai abbiamo imparato!</span></p>
 
         <hr class="mt-5 mb-5">
 

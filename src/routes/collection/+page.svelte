@@ -1,5 +1,5 @@
 <script>
-    import ozerofront from"$lib/images/o-zero2w-front-optimized.webp?enhanced";
+    import ozerofront from"$lib/images/o-zero2w-front-optimized.webp";
     import ozeroangle from "$lib/images/o-zero2w-angled-optimized.webp";
     import orangelogo from "$lib/images/orange-logo-optimized.webp";
     import {onMount} from "svelte";
@@ -93,7 +93,7 @@
         <div class="col-12 col-md-5 pt-5 pb-4">
             <img src="{orangelogo}" class="img-fluid rounded-5 mt-md-5 mx-auto d-block" alt="Orange Pi Zero 2W" />
             <img src="{ozeroangle}" class="img-fluid rounded-5 mt-3 mt-md-5 mx-auto d-block" alt="Raspberry Pi Zero 2W" />
-            <enhanced:img src="{ozerofront}" class="img-fluid rounded-5 mt-4 mt-md-5 mx-auto d-block" alt="Raspberry Pi Zero 2W" />
+            <img src="{ozerofront}" class="img-fluid rounded-5 mt-4 mt-md-5 mx-auto d-block" alt="Raspberry Pi Zero 2W" />
         </div>
         <!-- Orange Pi Zero 2W Info -->
         <div class="col-12 col-md-7 bg-black bg-opacity-50 p-4 pb-2 rounded-5 orange">
