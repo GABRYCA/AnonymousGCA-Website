@@ -21,6 +21,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-node": "^2.0.0"
+		"@sveltejs/adapter-node": "^2.0.0",
+		"@sveltejs/enhanced-img": "^0.1.8"
 	}
 }

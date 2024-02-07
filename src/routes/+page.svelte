@@ -3,7 +3,7 @@
     import Skill from "$lib/components/Skill.svelte";
     import CircularLink from "$lib/components/CircularLink.svelte";
     import SVGWave from "$lib/components/SVGWave.svelte";
-    import favicon from "$lib/images/favicon.webp";
+    import favicon from "$lib/images/favicon.webp?enhanced";
 
     onMount(() => {
         window.$('[data-bs-toggle="tooltip"]').tooltip();
@@ -22,9 +22,7 @@
 <!-- Image logo from img/logo.png -->
 <div class="row justify-content-center align-items-center pb-5 pb-md-0 bg-black bg-opacity-10">
     <div class="col-12 col-lg-6 text-center pe-lg-0">
-        <img src={favicon} class="img-fluid p-5" style="max-height: 75vh" alt="AnonymousGCA Logo"
-             data-aos="fade-down"
-             data-aos-duration="1500">
+        <enhanced:img src={favicon} class="img-fluid p-5" style="max-height: 75vh" alt="AnonymousGCA Logo" data-aos="fade-down" data-aos-duration="1500"/>
     </div>
     <div class="col-12 col-lg-6 text-center ps-lg-0">
         <p class="h1" id="text-glitched-effect" data-aos="slide-left" data-aos-duration="1500">Hi! I'm
@@ -95,8 +93,6 @@
 </div>
 
 <style>
-    @import url(//fonts.googleapis.com/css?family=Lato:300:400);
-
     .animate-text {
         text-transform: uppercase;
         background-image: linear-gradient(

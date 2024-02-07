@@ -120,9 +120,9 @@
 <style>
 
     /* Global font for all kind of texts on all pages (must be in row to work, just a workaround) */
-    :global(.row, slot, nav, footer, .container, .container-fluid){
+    /*:global(.row, slot, nav, footer, .container, .container-fluid){
         font-family: 'Roboto', sans-serif !important;
-    }
+    }*/
 
     .navbar-brand {
         text-shadow: 2px 2px #000;
