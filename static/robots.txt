@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.anonymousgca.eu/sitemap.xml
+Sitemap: https://anonymousgca.eu/sitemap.xml
