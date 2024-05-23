@@ -12,7 +12,6 @@
 </script>
 
 <svelte:head>
-    <!-- meta -->
     <title>Home - AnonymousGCA</title>
     <meta name="description"
           content="AnonymousGCA - Web Developer, University Student, SvelteKit and PHP 8.2 Lover, Free-Time Designer-Artist">
