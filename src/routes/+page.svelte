@@ -4,6 +4,7 @@
     import CircularLink from "$lib/components/CircularLink.svelte";
     import SVGWave from "$lib/components/SVGWave.svelte";
     import favicon from "$lib/images/favicon.webp";
+    import Seo from "sk-seo";
 
     onMount(() => {
         window.$('[data-bs-toggle="tooltip"]').tooltip();
@@ -11,11 +12,20 @@
 
 </script>
 
-<svelte:head>
-    <title>Home - AnonymousGCA</title>
-    <meta name="description"
-          content="AnonymousGCA - Web Developer, University Student, SvelteKit and PHP 8.2 Lover, Free-Time Designer-Artist">
-</svelte:head>
+<Seo
+    title="Home - AnonymousGCA"
+    description="AnonymousGCA - Web Developer, University Student, SvelteKit and PHP 8.2 Lover, Soccer-Robocup programmer, Free-Time Designer-Artist"
+    siteName="AnonymousGCA"
+    imageURL={favicon}
+    logo={favicon}
+    author="AnonymousGCA"
+    name="AnonymousGCA"
+    schemaOrg="true"
+    twitter="true"
+    index="true"
+    canonical="https://anonymousgca.eu/"
+    keywords="AnonymousGCA, Developer, Designer, Web Development, Svelte, SvelteKit, PHP 8.2, University Student"
+/>
 
 
 <!-- Image logo from img/logo.png -->

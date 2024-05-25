@@ -3,16 +3,27 @@
     import ozeroangle from "$lib/images/o-zero2w-angled-optimized.webp";
     import orangelogo from "$lib/images/orange-logo-optimized.webp";
     import {onMount} from "svelte";
+    import Seo from "sk-seo";
+
 
     onMount(() => {
         window.$('[data-bs-toggle="tooltip"]').tooltip();
     });
 </script>
 
-<svelte:head>
-    <title>Collection - AnonymousGCA</title>
-    <meta name="description" content="AnonymousGCA's contacts">
-</svelte:head>
+<Seo
+    title="Collection - AnonymousGCA"
+    description="AnonymousGCA's collection"
+    siteName="AnonymousGCA"
+    imageURL="https://anonymousgca.eu/images/anonymousgca.webp"
+    logo="https://anonymousgca.eu/images/anonymousgca.webp"
+    author="AnonymousGCA"
+    name="AnonymousGCA"
+    schemaOrg="true"
+    twitter="true"
+    index="true"
+    keywords="AnonymousGCA, Collection, Raspberry Pi, Orange Pi, Zero 2W"
+/>
 
 <div class="container-xxl">
     <div class="row justify-content-center mt-4">

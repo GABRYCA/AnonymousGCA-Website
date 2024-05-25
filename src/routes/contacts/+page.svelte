@@ -1,16 +1,29 @@
 <script>
     import {onMount} from "svelte";
     import ContactCard from "$lib/components/ContactCard.svelte";
+    import Seo from "sk-seo";
 
     onMount(() => {
         window.$('[data-bs-toggle="tooltip"]').tooltip();
     });
 </script>
 
-<svelte:head>
-    <title>Contacts - AnonymousGCA</title>
-    <meta name="description" content="AnonymousGCA's contacts">
-</svelte:head>
+<Seo
+    title="Contacts - AnonymousGCA"
+    description="AnonymousGCA's contacts"
+    siteName="AnonymousGCA"
+    imageURL="https://anonymousgca.eu/images/anonymousgca.webp"
+    logo="https://anonymousgca.eu/images/anonymousgca.webp"
+    author="AnonymousGCA"
+    name="AnonymousGCA"
+    schemaOrg="true"
+    twitter="true"
+    index="true"
+    keywords="AnonymousGCA, Contacts, Github, Linkedin, Youtube, Crypto, Reddit, Discord, Email"
+/>
+
+
+
 
 <div class="row p-3 p-md-5">
     <div class="col">

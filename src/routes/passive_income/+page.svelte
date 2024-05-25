@@ -1,5 +1,6 @@
 <script>
     import {onMount} from "svelte";
+    import Seo from "sk-seo";
 
     onMount(() => {
         window.$('[data-bs-toggle="tooltip"]').tooltip();
@@ -11,10 +12,24 @@
     <meta name="description" content="Passive Income ideas: There're many ways to get a passive income, my favourite one is to sell unused bandwidth.">
 </svelte:head>
 
+<Seo
+    title="Passive Income - AnonymousGCA"
+    description="Passive Income ideas: There're many ways to get passive income, my favourite one is to sell unused bandwidth."
+    siteName="AnonymousGCA"
+    imageURL="https://anonymousgca.eu/images/anonymousgca.webp"
+    logo="https://anonymousgca.eu/images/anonymousgca.webp"
+    author="AnonymousGCA"
+    name="AnonymousGCA"
+    schemaOrg="true"
+    twitter="true"
+    index="true"
+    keywords="AnonymousGCA, Passive Income, EarnApp, Peer2Profit, IPRoyal, TraffMonetizer, HoneyGain, PacketStream"
+/>
+
 <div class="container mb-5">
     <div class="container text-center bg-primary bg-opacity-25 rounded-3 pb-3 pt-2 mt-5 border border-1 border-dark">
         <p class="h1 text-primary">Passive Income ideas:</p>
-        <p class="h6 text-primary">There're many ways to get a <u>passive income</u>, my favourite one is to sell <u>unused bandwidth</u>.
+        <p class="h6 text-primary">There're many ways to get <u>passive income</u>, my favourite one is to sell <u>unused bandwidth</u>.
             Companies can <u>use your internet connection to access websites</u> all over the world, or other <u>users</u> can use your connection
             as a <u>VPN</u>, stuff like that, these apps "usually" (I can't guarantee that, for now I never had issues) have a some kind of control
             over the data the company/user can search through your connection, for our safety and theirs.

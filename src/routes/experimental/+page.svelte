@@ -1,4 +1,5 @@
 <script>
+    import Seo from "sk-seo";
     /*export let data;
 
     const { holders } = data;
@@ -110,6 +111,20 @@
         return result;
     }
 </script>
+
+<Seo
+    title="SolScan GCA API"
+    description="SolScan GCA API"
+    siteName="SolScan GCA API"
+    imageURL="https://anonymousgca.eu/images/anonymousgca.webp"
+    logo="https://anonymousgca.eu/images/anonymousgca.webp"
+    author="AnonymousGCA"
+    name="AnonymousGCA"
+    schemaOrg="true"
+    twitter="true"
+    index="true"
+    keywords="SolScan, GCA, API, NFT, Collection, Holders"
+/>
 
 <div class="container">
     <div class="row text-center mt-2">
