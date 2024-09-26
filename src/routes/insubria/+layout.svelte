@@ -6,7 +6,7 @@
     });
 </script>
 
-<div class="row justify-content-around border-bottom border-light-subtle pt-2 pb-2 mb-4 shadow">
+<div class="row justify-content-around border-bottom border-light-subtle pt-3 pb-2 mb-4 shadow">
     <div class="col-auto">
         <a class="btn btn-outline-light" id="lunedi" href="/insubria/lunedi">Lunedì</a>
     </div>
