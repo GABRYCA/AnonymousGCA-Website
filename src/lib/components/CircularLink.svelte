@@ -35,6 +35,26 @@
     }
 
     .hover-effect-icons:hover {
-        color: #ff2b2b !important;
+        color: #d34cff !important;
+    }
+
+    .fa-circle {
+        color: rgba(255, 0, 170, 0.5);
+        filter: drop-shadow(0 0 0.5rem #d34cff);
+        animation: shadow 3s infinite;
+    }
+
+    @keyframes shadow {
+        0% {
+            filter: drop-shadow(0 0 0.5rem #ff2b2b);
+        }
+
+        50% {
+            filter: drop-shadow(0 0 0.5rem #d34cff);
+        }
+
+        100% {
+            filter: drop-shadow(0 0 0.5rem #ff2b2b);
+        }
     }
 </style>

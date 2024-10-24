@@ -78,6 +78,10 @@
         box-shadow: 0 0 10px #7a129c !important;
     }
 
+    .fas {
+        filter: drop-shadow(0 0 0.5rem #d34cff);
+    }
+
     .second-text {
         margin: auto;
         font-weight: 300;
@@ -85,7 +89,7 @@
     }
 
     .border-custom {
-        border: 1px solid rgba(122, 18, 156, 0.9) !important;
+        border: 1px outset rgba(122, 18, 156, 0.9) !important;
     }
 
     .fa-5x {
